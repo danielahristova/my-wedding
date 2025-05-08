@@ -6,10 +6,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Our Wedding</title>
+    <title>Сватба - Сашо и Дани</title>
     <style>
       :root {
         --white: #fff;
@@ -30,96 +30,484 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        font-family: "Roboto", sans-serif;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
       }
 
       body {
-        background-color: var(--light);
-        color: var(--black);
+        background-image: url("green-pine-trees-covered-with-fog.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-shadow: inset 0 0 0 2000px rgba(255, 250, 250, 0.45);
+        color: var(--dark-green);
         line-height: 1.6;
       }
 
-      section {
-        padding: 4rem 2rem;
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
       h1,
+      h1 *,
       h2,
       h3,
       h4,
       h5,
       h6 {
         font-family: Antarctic;
+        color: var(--brown);
       }
 
-      .hero {
+      h1 {
+        padding: 4rem 2rem;
+        font-size: 4.5rem;
+        line-height: 1.1;
         text-align: center;
-        background-color: var(--light);
-        padding: 6rem 2rem;
+        color: var(--light-green);
       }
 
-      .hero img {
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 2rem;
+      h2 {
+        font-size: 3.5rem;
+        line-height: 1.1;
+        color: var(--light);
       }
 
-      .hero h1 {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-        color: var(--dark-green);
+      svg {
+        width: 32px;
+        height: 32px;
+        margin-bottom: 20px;
       }
 
-      .section-title {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-        color: var(--dark-green);
+      svg path,
+      svg g {
+        fill: var(--light) !important;
       }
 
-      .info-item {
-        margin-bottom: 1.5rem;
+      .info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        margin-bottom: 2.5rem;
+      }
+
+      .info .box {
+        background: #5f4629a6;
+        color: var(--light);
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .info .box a,
+      .info .box div {
+        text-align: center;
+        color: var(--light);
+      }
+
+      .details {
+        max-width: 800px;
+        padding-bottom: 2.5rem;
+        margin-inline: auto;
+      }
+
+      .additional-info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex: 1;
+        padding: 4rem 2rem;
+        background: #5f4629a6;
+        color: var(--light);
+        margin-inline: auto;
+      }
+
+      .additional-info .item {
+        margin-bottom: 2.5rem;
+        text-align: center;
+      }
+
+      @media screen and (max-width: 820px) {
+        body {
+          background-position: right;
+        }
+
+        .details {
+          padding-bottom: 0;
+        }
+
+        .info {
+          grid-template-columns: repeat(1, 1fr);
+        }
+
+        .additional-info {
+          padding-inline: 1rem;
+        }
       }
     </style>
   </head>
   <body>
-    <section class="hero">
-      <img src="your-image.jpg" alt="Wedding" />
-      <h1>Александър & Даниела - 16 август 2025</h1>
-    </section>
+    <h1>Чакахме точно<br />3295 дни,<br />за да споделим този момент с теб!</h1>
+    <div class="details">
+      <div class="info">
+        <div class="box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            width="256"
+            height="256"
+            viewBox="0 0 256 256"
+            xml:space="preserve"
+          >
+            <g
+              style="
+                stroke: none;
+                stroke-width: 0;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: none;
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+            >
+              <path
+                d="M 45 1.802 c 16.583 0 30.075 13.491 30.075 30.075 c 0 7.102 -2.538 14.004 -7.145 19.434 L 45 78.317 L 22.07 51.311 c -4.608 -5.43 -7.145 -12.332 -7.145 -19.434 C 14.925 15.294 28.417 1.802 45 1.802 M 45 45.692 c 8.222 0 14.912 -6.689 14.912 -14.912 c 0 -8.222 -6.689 -14.912 -14.912 -14.912 S 30.088 22.557 30.088 30.78 C 30.088 39.002 36.778 45.692 45 45.692 M 45 0 C 27.395 0 13.123 14.272 13.123 31.877 c 0 7.86 2.858 15.043 7.573 20.6 L 45 81.101 l 24.304 -28.624 c 4.716 -5.558 7.573 -12.741 7.573 -20.6 C 76.877 14.272 62.605 0 45 0 L 45 0 z M 45 43.889 c -7.24 0 -13.11 -5.869 -13.11 -13.11 c 0 -7.24 5.869 -13.11 13.11 -13.11 s 13.11 5.869 13.11 13.11 C 58.11 38.02 52.24 43.889 45 43.889 L 45 43.889 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+              <path
+                d="M 58.814 71.531 l -1.575 1.575 c 9.772 1.532 15.583 4.707 15.583 7.094 c 0 3.261 -10.838 7.997 -27.822 7.997 S 17.178 83.461 17.178 80.2 c 0 -2.387 5.811 -5.562 15.583 -7.094 l -1.575 -1.575 c -9.401 1.643 -15.81 4.907 -15.81 8.669 c 0 5.412 13.263 9.8 29.625 9.8 c 16.361 0 29.625 -4.388 29.625 -9.8 C 74.625 76.439 68.215 73.174 58.814 71.531 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+            </g>
+          </svg>
+          <a href="https://maps.app.goo.gl/stseZhmWEtrotaS27">хижа Звездица</a>
+          <div>София</div>
+        </div>
+        <div class="box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            width="256"
+            height="256"
+            viewBox="0 0 256 256"
+            xml:space="preserve"
+          >
+            <g
+              style="
+                stroke: none;
+                stroke-width: 0;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: none;
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+            >
+              <path
+                d="M 65.591 11.377 H 24.41 c -0.552 0 -1 -0.448 -1 -1 s 0.448 -1 1 -1 h 41.181 c 0.553 0 1 0.448 1 1 S 66.144 11.377 65.591 11.377 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+              <path
+                d="M 89 29.068 H 1 c -0.552 0 -1 -0.448 -1 -1 v -9.292 c 0 -5.182 4.216 -9.398 9.398 -9.398 H 16.1 c 0.552 0 1 0.448 1 1 s -0.448 1 -1 1 H 9.398 C 5.319 11.377 2 14.696 2 18.775 v 8.292 h 86 v -8.292 c 0 -4.08 -3.319 -7.398 -7.398 -7.398 h -6.702 c -0.553 0 -1 -0.448 -1 -1 s 0.447 -1 1 -1 h 6.702 c 5.183 0 9.398 4.216 9.398 9.398 v 9.292 C 90 28.62 89.553 29.068 89 29.068 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+              <path
+                d="M 80.602 89.081 H 9.398 C 4.216 89.081 0 84.865 0 79.683 V 28.068 c 0 -0.552 0.448 -1 1 -1 h 88 c 0.553 0 1 0.448 1 1 v 51.615 C 90 84.865 85.784 89.081 80.602 89.081 z M 2 29.068 v 50.615 c 0 4.079 3.319 7.398 7.398 7.398 h 71.204 c 4.079 0 7.398 -3.319 7.398 -7.398 V 29.068 H 2 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+              <path
+                d="M 22.75 52.791 H 17.76 c -2.06 0 -3.736 -1.676 -3.736 -3.735 v -4.989 c 0 -2.06 1.676 -3.736 3.736 -3.736 h 4.989 c 2.06 0 3.736 1.676 3.736 3.736 v 4.989 C 26.485 51.115 24.81 52.791 22.75 52.791 z M 17.76 42.33 c -0.957 0 -1.736 0.779 -1.736 1.736 v 4.989 c 0 0.957 0.779 1.735 1.736 1.735 h 4.989 c 0.957 0 1.736 -0.778 1.736 -1.735 v -4.989 c 0 -0.958 -0.779 -1.736 -1.736 -1.736 H 17.76 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+              <path
+                d="M 47.494 52.791 h -4.989 c -2.06 0 -3.736 -1.676 -3.736 -3.735 v -4.989 c 0 -2.06 1.676 -3.736 3.736 -3.736 h 4.989 c 2.061 0 3.736 1.676 3.736 3.736 v 4.989 C 51.23 51.115 49.555 52.791 47.494 52.791 z M 42.505 42.33 c -0.957 0 -1.736 0.779 -1.736 1.736 v 4.989 c 0 0.957 0.779 1.735 1.736 1.735 h 4.989 c 0.957 0 1.736 -0.778 1.736 -1.735 v -4.989 c 0 -0.958 -0.779 -1.736 -1.736 -1.736 H 42.505 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+              <path
+                d="M 72.239 52.791 h -4.988 c -2.061 0 -3.736 -1.676 -3.736 -3.735 v -4.989 c 0 -2.06 1.676 -3.736 3.736 -3.736 h 4.988 c 2.061 0 3.736 1.676 3.736 3.736 v 4.989 C 75.976 51.115 74.3 52.791 72.239 52.791 z M 67.251 42.33 c -0.957 0 -1.736 0.779 -1.736 1.736 v 4.989 c 0 0.957 0.779 1.735 1.736 1.735 h 4.988 c 0.957 0 1.736 -0.778 1.736 -1.735 v -4.989 c 0 -0.958 -0.779 -1.736 -1.736 -1.736 H 67.251 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+              <path
+                d="M 22.75 74.309 H 17.76 c -2.06 0 -3.736 -1.676 -3.736 -3.735 v -4.989 c 0 -2.061 1.676 -3.736 3.736 -3.736 h 4.989 c 2.06 0 3.736 1.676 3.736 3.736 v 4.989 C 26.485 72.633 24.81 74.309 22.75 74.309 z M 17.76 63.848 c -0.957 0 -1.736 0.779 -1.736 1.736 v 4.989 c 0 0.957 0.779 1.735 1.736 1.735 h 4.989 c 0.957 0 1.736 -0.778 1.736 -1.735 v -4.989 c 0 -0.957 -0.779 -1.736 -1.736 -1.736 H 17.76 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+              <path
+                d="M 47.494 74.309 h -4.989 c -2.06 0 -3.736 -1.676 -3.736 -3.735 v -4.989 c 0 -2.061 1.676 -3.736 3.736 -3.736 h 4.989 c 2.061 0 3.736 1.676 3.736 3.736 v 4.989 C 51.23 72.633 49.555 74.309 47.494 74.309 z M 42.505 63.848 c -0.957 0 -1.736 0.779 -1.736 1.736 v 4.989 c 0 0.957 0.779 1.735 1.736 1.735 h 4.989 c 0.957 0 1.736 -0.778 1.736 -1.735 v -4.989 c 0 -0.957 -0.779 -1.736 -1.736 -1.736 H 42.505 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+              <path
+                d="M 72.239 74.309 h -4.988 c -2.061 0 -3.736 -1.676 -3.736 -3.735 v -4.989 c 0 -2.061 1.676 -3.736 3.736 -3.736 h 4.988 c 2.061 0 3.736 1.676 3.736 3.736 v 4.989 C 75.976 72.633 74.3 74.309 72.239 74.309 z M 67.251 63.848 c -0.957 0 -1.736 0.779 -1.736 1.736 v 4.989 c 0 0.957 0.779 1.735 1.736 1.735 h 4.988 c 0.957 0 1.736 -0.778 1.736 -1.735 v -4.989 c 0 -0.957 -0.779 -1.736 -1.736 -1.736 H 67.251 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+              <path
+                d="M 21.673 19.835 h -2.837 c -2.06 0 -3.736 -1.676 -3.736 -3.736 V 4.655 c 0 -2.06 1.676 -3.736 3.736 -3.736 h 2.837 c 2.06 0 3.736 1.676 3.736 3.736 v 11.444 C 25.41 18.159 23.733 19.835 21.673 19.835 z M 18.836 2.919 c -0.958 0 -1.736 0.779 -1.736 1.736 v 11.444 c 0 0.958 0.779 1.736 1.736 1.736 h 2.837 c 0.958 0 1.736 -0.779 1.736 -1.736 V 4.655 c 0 -0.957 -0.779 -1.736 -1.736 -1.736 H 18.836 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+              <path
+                d="M 71.164 19.835 h -2.838 c -2.06 0 -3.735 -1.676 -3.735 -3.736 V 4.655 c 0 -2.06 1.676 -3.736 3.735 -3.736 h 2.838 c 2.06 0 3.735 1.676 3.735 3.736 v 11.444 C 74.899 18.159 73.224 19.835 71.164 19.835 z M 68.326 2.919 c -0.957 0 -1.735 0.779 -1.735 1.736 v 11.444 c 0 0.958 0.778 1.736 1.735 1.736 h 2.838 c 0.957 0 1.735 -0.779 1.735 -1.736 V 4.655 c 0 -0.957 -0.778 -1.736 -1.735 -1.736 H 68.326 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+            </g>
+          </svg>
 
-    <section>
-      <h2 class="section-title">Важното:</h2>
-      <div class="info-item"><strong>Кога:</strong> събота, 16 август 2025</div>
-      <div class="info-item"><strong>Къде:</strong> хижа Звездица, София</div>
-      <div class="info-item">
-        <strong>По кое време:</strong> Изнесен риатуал - 16:00
-      </div>
-    </section>
+          <div>събота, 16 август 2025</div>
+        </div>
+        <div class="box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            width="256"
+            height="256"
+            viewBox="0 0 256 256"
+            xml:space="preserve"
+          >
+            <g
+              style="
+                stroke: none;
+                stroke-width: 0;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: none;
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+            >
+              <path
+                d="M 60.269 30.771 L 47.201 41.304 c -0.624 -0.367 -1.341 -0.593 -2.116 -0.593 c -2.318 0 -4.204 1.886 -4.204 4.204 c 0 1.794 1.135 3.318 2.721 3.921 v 23.038 c 0 0.819 0.664 1.484 1.484 1.484 s 1.483 -0.664 1.483 -1.484 V 48.836 c 1.585 -0.602 2.721 -2.126 2.721 -3.921 c 0 -0.457 -0.092 -0.889 -0.227 -1.301 l 13.07 -10.534 c 0.637 -0.514 0.738 -1.448 0.224 -2.086 C 61.84 30.357 60.907 30.256 60.269 30.771 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+              <path
+                d="M 45.084 -0.085 c -24.813 0 -45 20.187 -45 45 c 0 24.814 20.187 45.001 45 45.001 c 24.813 0 45 -20.187 45 -45.001 C 90.084 20.102 69.897 -0.085 45.084 -0.085 z M 45.084 86.949 c -23.177 0 -42.033 -18.856 -42.033 -42.034 c 0 -23.177 18.856 -42.033 42.033 -42.033 c 23.177 0 42.033 18.856 42.033 42.033 C 87.117 68.093 68.261 86.949 45.084 86.949 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+            </g>
+          </svg>
 
-    <section>
-      <h2 class="section-title">Настаняване:</h2>
-      <div class="info-item">
-        Осигурили сме нощувки в хижата за всички желаещи, за наша сметка. Моля,
-        само ни кажете до 10 юни дали оставате и колко човека ще сте, за да
-        предвидим всичко.
+          <div><b>16:00</b> - Начало с коктейл и хапване</div>
+          <div><b>17:00</b> - Изнесен ритуал и снимки</div>
+          <div><b>18:00</b> - Празнична вечеря</div>
+        </div>
       </div>
-    </section>
-
-    <section>
-      <h2 class="section-title">Още информация:</h2>
-      <div class="info-item">Паркинг: Има достатъчно места за автомобили.</div>
-      <div class="info-item">
-        Цветя и подаръци: Най-големият подарък за нас е вашето присъствие и
-        усмивки! Молим ви, без букети и цветя.
+      <div class="additional-info">
+        <div class="item">
+          <h2>Настаняване:</h2>
+          Осигуряваме нощувка в хижата за всички желаещи, за наша сметка. Моля,
+          само ни кажи <b>до 10 юни</b> дали оставате и колко човека ще сте, за
+          да предвидим всичко. Настаняването е след 13:00ч.
+        </div>
+        <div class="item">
+          <h2>Паркинг:</h2>
+          Има достатъчно места за автомобили.
+        </div>
+        <div class="item">
+          <h2>Цветя и подаръци:</h2>
+          Ела с усмивка и добро настроение, без букети и цветя. Ако нямаш вече
+          идея за подарък, заложи на традиционната - банкнота в пликче.
+        </div>
+        <div class="item">
+          <h2>Облекло:</h2>
+          Остави официалните тоалети (освен ако това не те кара да се чувстваш
+          супер!). Важното е да ти е удобно и да си готов за танци. Все пак сме
+          в планината, така че удобни обувки и нещо връхно за вечерта ще са ти
+          от полза.
+        </div>
+        <div class="item">
+          <h2>За децата:</h2>
+          На територията на хижата има и въжен парк, където да се поизморят,
+          докато ти си пийваш нещо студено.
+        </div>
       </div>
-      <div class="info-item">
-        Облекло: Забравете за официалните тоалети (освен ако това не ви кара да
-        се чувствате супер!). Важното е да ви е удобно и да сте готови за танци
-        и забавления. Все пак сме в планината, така че удобни обувки и нещо
-        връхно за вечерта ще са ви от полза.
-      </div>
-    </section>
+    </div>
   </body>
 </html>
